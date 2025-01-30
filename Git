@@ -1,1 +1,36 @@
+# mkdir github-for-devops-workshop  
+# git init                (Create a new Git repository)
+# git status              (Check the status of the repository)
+
+Git has three stages of workflow -1. Working aria 2. Staging aria 3. Local Repository.
+We send data or code from working aria to staging aria by add command and staging aria to Local repository by 
+commit command and finally send data/code from Local repo to central repo by push command.
+
+untracked :- if file is in file system so it is utracked for vcs like git 
+staged :- when file is added to staged when code is completed
+tracked :- when file is moved from staging to tracked then its tracked for git
+
+# git add <filename>  (Add a file to the staging area:)
+# git rm --cached <file>   (to unstaged)
+# git add .          (to stage all files at once)
+# git commit -m "added testing file" (Commit changes with a message)
+
+now delete the testing.py file and you can also recover it in git
+
+# rm testing.py
+# git restore testing.py
+
+If want to send this code to my central repository, I have to connect local repo to central repo first, for this action I 
+have to create a new repository (any name) and paste the URL of git repo and execute command as given below 
+[Mumbaigit] # git remote add origin https://github.com/zshan227/centralgit2.git
+
+# git remote add origin https://github.com/shahebaz-Devops/git-repository-for-practice.git
+# git remote -v (to check we connect or not to github URL)
+
+# git remote set-url origin https://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@github.com/shahebaz-Devops/git-repository-for-practice.git   (to set the url)
+# git push origin master
+
+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 (PAT)
+
+
 

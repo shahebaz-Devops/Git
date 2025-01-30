@@ -32,5 +32,4 @@ have to create a new repository (any name) and paste the URL of git repo and exe
 
 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 (PAT)
 
-
-
+# git clone https://github.com/shahebaz-Devops/git-repository-for-practice.git      (to clone repo from central to local repo)

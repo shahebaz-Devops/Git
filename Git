@@ -67,3 +67,16 @@ for example if we define that if there is any syntax issue with the code so it s
 
 git hooks = pre-commit hook
 
+----------------------------------------------------------------------------
+
+Porject :- Deploy a static website using GithubAction
+
+First an IAM user and attached it admin level policy
+create access key and secret key for the user
+on git hub fork the shubham londhe repo where the code is available
+once the repo is forked goto main.yml file and now goto github setting > secret and variable > action > create new repo > 
+repo name "AWS_ACCESS_KEY_ID" and value is "our aws access id" then create > create new repo > 
+repo name "AWS_SECRET_ACCESS_KEY" value is "our aws secret access key" then create
+create one s3 public bucket and name it as tws-junoon-shahebaz to make is publick create a policy for s3 getobject action and apply
+now goto s3 static website option and enable it keep filename as index.html and error.html
+now in main.yml file define you bucket name like "tws-junoon-shahebaz"

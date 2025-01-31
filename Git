@@ -27,9 +27,43 @@ have to create a new repository (any name) and paste the URL of git repo and exe
 # git remote add origin https://github.com/shahebaz-Devops/git-repository-for-practice.git
 # git remote -v (to check we connect or not to github URL)
 
-# git remote set-url origin https://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@github.com/shahebaz-Devops/git-repository-for-practice.git   (to set the url)
+# git remote set-url origin https://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@github.com/shahebaz-Devops/git-repository-for-practice.git   (to set the url)
 # git push origin master
 
 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 (PAT)
 
 # git clone https://github.com/shahebaz-Devops/git-repository-for-practice.git      (to clone repo from central to local repo)
+# git pull origin master    (to pull the changes from github to local)
+
+Branching in Git:-
+
+# git branch         (to check the branches available)
+# git branch dev      (to create a branch)
+# git switch dev / # git checkout dev
+# vi dev.txt
+# git status
+
+new token
+
+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
+
+# git add dev.txt
+# git commit -m "dev file"
+# git log
+# git log --oneline
+# git push origin dev
+HEAD is a latest commit
+
+Pull request is way to merge one branch with another on github
+
+# git fetch    (to fetch remote branches to our local)
+# git pull    (to add remote changes to update on our branch at local)
+----------------------------------------------------------------------------
+
+> Git Hook
+
+Using git hooks we can apply check before commiting the code,
+for example if we define that if there is any syntax issue with the code so it should not be commited.
+
+git hooks = pre-commit hook
+

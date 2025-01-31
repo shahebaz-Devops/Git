@@ -71,6 +71,8 @@ git hooks = pre-commit hook
 
 Porject :- Deploy a static website using GithubAction
 
+once we run the code using github action so code will goto s3 bucket and website will be publicly accesible.
+
 First an IAM user and attached it admin level policy
 create access key and secret key for the user
 on git hub fork the shubham londhe repo where the code is available

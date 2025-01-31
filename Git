@@ -62,7 +62,7 @@ Pull request is way to merge one branch with another on github
 
 > Git Hook
 
-Using git hooks we can apply check before commiting the code,
+Using git hooks we can apply check before or afetr commiting the code,
 for example if we define that if there is any syntax issue with the code so it should not be commited.
 
 git hooks = pre-commit hook

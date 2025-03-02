@@ -27,10 +27,10 @@ have to create a new repository (any name) and paste the URL of git repo and exe
 # git remote add origin https://github.com/shahebaz-Devops/git-repository-for-practice.git
 # git remote -v (to check we connect or not to github URL)
 
-# git remote set-url origin https://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@github.com/shahebaz-Devops/git-repository-for-practice.git   (to set the url)
+# git remote set-url origin https://PAT@github.com/shahebaz-Devops/git-repository-for-practice.git   (to set the url)
 # git push origin master
 
-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 (PAT)
+(PAT)
 
 # git clone https://github.com/shahebaz-Devops/git-repository-for-practice.git      (to clone repo from central to local repo)
 # git pull origin master    (to pull the changes from github to local)
@@ -45,7 +45,6 @@ Branching in Git:-
 
 new token
 
-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
 
 # git add dev.txt
 # git commit -m "dev file"
@@ -54,7 +53,7 @@ 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
 # git push origin dev
 HEAD is a latest commit
 
-Pull request is way to merge one branch with another on github
+Pull request is a way to merge one branch with another on github
 
 # git fetch    (to fetch remote branches to our local)
 # git pull    (to add remote changes to update on our branch at local)
@@ -81,7 +80,7 @@ repo name "AWS_ACCESS_KEY_ID" and value is "our aws access id" then create > cre
 repo name "AWS_SECRET_ACCESS_KEY" value is "our aws secret access key" then create
 create one s3 public bucket and name it as tws-junoon-shahebaz to make is publick create a policy for s3 getobject action and apply
 now goto s3 static website option and enable it keep filename as index.html and error.html
-now in main.yml file define your bucket name like "tws-junoon-shahebaz"
+now goto this repo "tws-portfolio" in main.yml file define your bucket name like "tws-junoon-shahebaz"
 once done make a little change in index.html and goto to action on github and see workflows either is succesfully done or not.
 now access the static s3 bucker url, you can access the web page.
 

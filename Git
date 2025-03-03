@@ -85,3 +85,33 @@ once done make a little change in index.html and goto to action on github and se
 now access the static s3 bucker url, you can access the web page.
 
 ----------------------------------------------------------------------------
+
+git init   (Initializes a new Git repository in the current directory.)
+git clone  (to clone the code from central repo to local)
+git add    (Stages changes (files or modifications) for the next commit.)
+git commit ( Saves staged changes to the repository with a descriptive message.)
+git status ( Shows the current state of the working directory and staging area.)
+git diff   ( Displays the differences between the working directory and the staging area (unstaged changes).)
+git checkout ( Switches branches)
+git reset  ( Undoes changes by moving the HEAD and optionally modifying the staging area or working directory)
+Here's an example of using git reset:
+git reset --soft HEAD~1 > This command removes the last commit but keeps the changes staged, so you can modify or recommit them.
+git log  ( Shows the commit history of the repository. )
+git show ( Displays detailed information about a specific commit, including changes made.)
+git show <commit-hash> > Replace <commit-hash> with an actual commit ID to see its details.
+git tag  ( Creates, lists, or manages tags in a Git repository. Tags are used to mark specific points in history, often for releases.)
+git tag v1.0.0
+git tag -a v1.0.0 -m "Version 1.0 release"
+git push ( Uploads local commits to a remote repository.)
+git push origin main
+git pull ( Fetches changes from a remote repository and merges them into the current branch. )
+git pull origin main
+git fetch origin  (For only fetching changes (without merging))
+git branch – Manages branches in a Git repository.
+git branch  (List all branches)
+git branch feature-branch (Create a new branch )
+git branch -d feature-branch  (Delete a branch)
+
+
+
+

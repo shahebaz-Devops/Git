@@ -111,6 +111,71 @@ git branch – Manages branches in a Git repository.
 git branch  (List all branches)
 git branch feature-branch (Create a new branch )
 git branch -d feature-branch  (Delete a branch)
+git merge – Combines changes from one branch into another.
+git merge feature-branch   (Merges feature-branch into the current branch.)
+git rebase – Moves or reapplies commits from one branch onto another, creating a cleaner commit history.
+git rebase main ( Applies the current branch’s commits on top of the latest main branch commits.)
+git branch --set-upstream-to – Sets or changes the upstream (tracking) branch for the current branch.
+git branch --set-upstream-to=origin/main ( Links the current branch to origin/main, so git pull and git push automatically interact with it.)
+git push --set-upstream origin my-branch
+git branch --unset-upstream – Removes the upstream (tracking) branch from a local branch.
+git branch --unset-upstream  This removes the tracking information for the current branch, meaning git pull and git push will no longer automatically sync with a remote branch.
+git cherry-pick – Apply Specific Commits to Another Branch
+The git cherry-pick command allows you to selectively apply specific commits from one branch to another without merging everything. This is useful when you want to pick only certain changes instead of merging an entire branch.
+git cherry-pick a1b2c3d  (This applies commit a1b2c3d from another branch to the current branch.)
+git stash – Temporarily Save Changes Without Committing 
+The git stash command allows you to save uncommitted changes without committing them, so you can work on something else and come back later. This is useful when you need to switch branches or pull updates but don't want to commit yet.
+git stash  (Stash Your Changes)
+git stash list
+git stash apply  (Apply Stashed Changes Without Removing)
+git stash apply stash@{1}
+git stash pop  (Apply Stashed Changes and Remove from Stash)
+git stash drop stash@{1}  (Remove a Specific Stash)
+git stash clear  (To remove all stashes:)
+git clone --mirror – Create a Full Bare Clone of a Repository 
+The git clone --mirror command creates a mirror clone of a Git repository. Unlike a regular clone, this mirrors all branches, tags, and refs, making it ideal for backups or repository migrations.
+git clone --mirror https://github.com/user/repo.git  (This creates a bare mirrored clone of repo.git, including all refs and remote-tracking branches.)
+git config – Configure Git Settings ⚙️
+The git config command is used to set and manage Git configuration settings like user details, editor preferences, aliases, and more. It can be applied at different levels:
+Set User Information
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+For a specific repository:
+git config --local user.name "Repo-Specific Name"
+git config --local user.email "repo.email@example.com"
+git config --list  (Check Current Configurations)
+Resetting Git Configuration (git config --unset) 
+If you need to reset or remove a specific Git configuration, you can use the git config --unset command.
+git config --global --unset user.name
+git config --global --unset user.email
+git config --local --unset user.name
+git blame – Find Who Changed Each Line in a File 🔍
+The git blame command shows who last modified each line of a file and when. This is useful for tracking changes, debugging, or understanding the history of a file.
+git blame filename
+git revert in Simple Terms 🚀
+🔹 What does it do?
+It undoes a commit by making a new commit that reverses the changes.
+
+🔹 Why use it?
+If you made a mistake in a commit but don’t want to lose history, git revert is the safest way to fix it.
+Yes! When you run git revert, it creates a new commit that undoes the changes introduced by the specified commit.
+Example Scenario 📌
+1️⃣ You added a new line to a file and committed it:
+echo "New Feature" >> feature.txt
+git add feature.txt
+git commit -m "Added new feature"
+Now, the commit history looks like this:
+A -- B -- C (Added new feature) -- D (Latest)
+2️⃣ You realize this change was wrong and run:
+git revert C
+✅ Git creates a new commit (E) that removes the line added in commit C.
+A -- B -- C -- D -- E (Revert commit)
+Result: The new commit cancels out commit C while keeping the history intact.
+
+
+
+
+
 
 
 
